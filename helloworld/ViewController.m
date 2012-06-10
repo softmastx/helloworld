@@ -22,6 +22,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [UIView animateWithDuration:0.5
+                     animations:^{
+                         
+                         self.view.alpha = 0.0;
+                     }
+                     completion:^(BOOL finished){ 
+                         
+                         self.view.alpha = 1.0;
+                     }];
 }
 
 - (void)viewDidUnload
