@@ -22,6 +22,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *astring = @"my name is boyd";
+    NSString *result = [astring stringByReplacingOccurrencesOfString:@"boyd" withString:@"awsome"];
+    NSLog(@"%@",result);
 }
 
 - (void)viewDidUnload
