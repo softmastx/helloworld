@@ -11,3 +11,9 @@
 @interface ViewController : UIViewController
 
 @end
+
+@interface UIProgressHUD : NSObject
+-(void) show : (BOOL) yesOrno;
+-(UIProgressHUD *) initWithWindow:(UIView *) window;
+-(void) setText: (NSString *) theText;
+@end

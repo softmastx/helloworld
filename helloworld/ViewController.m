@@ -18,10 +18,28 @@
 
 #pragma mark - View lifecycle
 
+-(void) killHUD:(id)aHUD{
+    [aHUD show:NO];
+    
+}
+
+-(void) presentSheet{
+    
+    id HUD = [[UIProgressHUD alloc]initWithWindow:[self view]];
+    [HUD setText:@"Dowloading..."];
+    [HUD show:YES];
+    
+    [self performSelector:@selector(killHUD:) withObject:HUD afterDelay:5.0];
+    
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self presentSheet];
 }
 
 - (void)viewDidUnload
