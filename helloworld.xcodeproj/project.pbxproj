@@ -15,6 +15,7 @@
 		0459A9EB1584E28F00D3090D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459A9EA1584E28F00D3090D /* AppDelegate.m */; };
 		0459A9EE1584E28F00D3090D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0459A9ED1584E28F00D3090D /* ViewController.m */; };
 		0459A9F11584E29000D3090D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0459A9EF1584E29000D3090D /* ViewController.xib */; };
+		04D0A0A115867CD10059DD74 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D0A0A015867CD10059DD74 /* InfoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		0459A9EC1584E28F00D3090D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0459A9ED1584E28F00D3090D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0459A9F01584E29000D3090D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		04D0A09F15867CD10059DD74 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		04D0A0A015867CD10059DD74 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,8 @@
 		0459A9CB1584E28F00D3090D = {
 			isa = PBXGroup;
 			children = (
+				04D0A09F15867CD10059DD74 /* InfoView.h */,
+				04D0A0A015867CD10059DD74 /* InfoView.m */,
 				0459A9E01584E28F00D3090D /* helloworld */,
 				0459A9D91584E28F00D3090D /* Frameworks */,
 				0459A9D71584E28F00D3090D /* Products */,
@@ -164,6 +169,7 @@
 				0459A9E71584E28F00D3090D /* main.m in Sources */,
 				0459A9EB1584E28F00D3090D /* AppDelegate.m in Sources */,
 				0459A9EE1584E28F00D3090D /* ViewController.m in Sources */,
+				04D0A0A115867CD10059DD74 /* InfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +279,7 @@
 				0459A9F61584E29000D3090D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

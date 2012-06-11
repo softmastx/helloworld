@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InfoView.h"
 
 @interface ViewController : UIViewController
-
+{
+    InfoView *infoView;
+    UIButton *aButton;
+}
 @end
