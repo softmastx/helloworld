@@ -23,14 +23,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [UIView animateWithDuration:0.5
+    self.view.backgroundColor = [UIColor blackColor];
+    
+    
+    UIView *topview = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
+    topview.backgroundColor = [UIColor redColor];
+    
+    [self.view addSubview:topview];
+    
+    
+    [UIView animateWithDuration:1.5
                      animations:^{
                          
-                         self.view.alpha = 0.0;
+                         [topview setFrame:CGRectMake(0, 480, 320, 480)];
                      }
                      completion:^(BOOL finished){ 
-                         
-                         self.view.alpha = 1.0;
+                         [topview release];
                      }];
 }
 
