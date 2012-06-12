@@ -273,6 +273,7 @@
 				0459A9F61584E29000D3090D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,23 @@
 
 #import "ViewController.h"
 
+@interface UIApplication (Private)
+
+- (BOOL)openURL:(NSURL*)url;
+
+@end
+
+@implementation UIApplication (Private)
+
+- (BOOL)openURL:(NSURL*)url {
+    
+    NSLog(@"link is clicked");
+    
+    return YES;
+    
+}     
+@end
+
 @implementation ViewController
 
 - (void)didReceiveMemoryWarning
@@ -18,10 +35,18 @@
 
 #pragma mark - View lifecycle
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    txtView = [[UITextView alloc]initWithFrame:CGRectMake(80, 50, 200, 50)];
+    txtView.text = @"http://www.google.com";
+    [txtView setEditable:NO];
+    [txtView setDataDetectorTypes:UIDataDetectorTypeAll];
+    [self.view addSubview:txtView];
+    
 }
 
 - (void)viewDidUnload
