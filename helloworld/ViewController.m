@@ -22,6 +22,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+//    This will return a two letter code for the currently selected language. "en" for English, "es" for Spanish, "de" for German, etc.
+    
+    NSString * language = [[NSLocale preferredLanguages] objectAtIndex:0];
+    NSLog(@"%@",language);
 }
 
 - (void)viewDidUnload
