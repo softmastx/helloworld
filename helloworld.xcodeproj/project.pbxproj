@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045123D5158E220300929C23 /* NSString+NSString_ConvertWhiteSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 045123D4158E220300929C23 /* NSString+NSString_ConvertWhiteSpace.m */; };
 		0459A9DB1584E28F00D3090D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0459A9DA1584E28F00D3090D /* UIKit.framework */; };
 		0459A9DD1584E28F00D3090D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0459A9DC1584E28F00D3090D /* Foundation.framework */; };
 		0459A9DF1584E28F00D3090D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0459A9DE1584E28F00D3090D /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045123D3158E220300929C23 /* NSString+NSString_ConvertWhiteSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_ConvertWhiteSpace.h"; sourceTree = "<group>"; };
+		045123D4158E220300929C23 /* NSString+NSString_ConvertWhiteSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_ConvertWhiteSpace.m"; sourceTree = "<group>"; };
 		0459A9D61584E28F00D3090D /* helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0459A9DA1584E28F00D3090D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0459A9DC1584E28F00D3090D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +53,8 @@
 		0459A9CB1584E28F00D3090D = {
 			isa = PBXGroup;
 			children = (
+				045123D3158E220300929C23 /* NSString+NSString_ConvertWhiteSpace.h */,
+				045123D4158E220300929C23 /* NSString+NSString_ConvertWhiteSpace.m */,
 				0459A9E01584E28F00D3090D /* helloworld */,
 				0459A9D91584E28F00D3090D /* Frameworks */,
 				0459A9D71584E28F00D3090D /* Products */,
@@ -164,6 +169,7 @@
 				0459A9E71584E28F00D3090D /* main.m in Sources */,
 				0459A9EB1584E28F00D3090D /* AppDelegate.m in Sources */,
 				0459A9EE1584E28F00D3090D /* ViewController.m in Sources */,
+				045123D5158E220300929C23 /* NSString+NSString_ConvertWhiteSpace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +279,7 @@
 				0459A9F61584E29000D3090D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

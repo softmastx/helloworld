@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NSString+NSString_ConvertWhiteSpace.h"
 @interface ViewController : UIViewController
 
 @end

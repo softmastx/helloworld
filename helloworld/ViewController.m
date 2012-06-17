@@ -22,6 +22,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *string = @"hello my friend";
+    string = [string convertWhiteSpace:string];
+    NSLog(@"%@",string);
 }
 
 - (void)viewDidUnload
