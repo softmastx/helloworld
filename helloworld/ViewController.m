@@ -22,6 +22,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *mystring = @"hello world my button";
+    int FontSize = 14;
+    CGSize stringsize = [mystring sizeWithFont:[UIFont systemFontOfSize:FontSize]]; 
+    //or whatever font you're using
+    UIButton *button = [[UIButton alloc]init];
+    button.titleLabel.font = [UIFont systemFontOfSize:FontSize];
+    [button setBackgroundColor:[UIColor redColor]];
+    [button setTitle:mystring forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(10,10,stringsize.width, stringsize.height)];
+    //[button sizeToFit];
+    [self.view addSubview:button];
+    [button release];
+
 }
 
 - (void)viewDidUnload
