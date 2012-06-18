@@ -22,6 +22,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableString *str = [@"String of words in (brackets) to be (removed)" mutableCopy];
+    
+    NSRegularExpression *regex = [NSRegularExpression         
+                                  regularExpressionWithPattern:@"\\(.+?\\)"
+                                  options:NSRegularExpressionCaseInsensitive
+                                  error:NULL];
+    
+    [regex replaceMatchesInString:str 
+                          options:0 
+                            range:NSMakeRange(0, [str length])  
+                     withTemplate:@""];
+    
+    NSLog(@"%@",str);
 }
 
 - (void)viewDidUnload
